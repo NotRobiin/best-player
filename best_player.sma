@@ -100,6 +100,16 @@ public RoundEnded()
     reset_stats();
 }
 
+public bomb_planted(planter)
+{
+    user_stats[planter][stats_planted] = true;
+}
+
+public bomb_defused(defuser)
+{
+    user_stats[defuser][stats_defused] = true;
+}
+
 /*
     [ Functions ]
 */
